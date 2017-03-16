@@ -1,0 +1,156 @@
+/* 
+    Native Element styling 
+*/
+
+body{}
+
+/*
+    Pushdown - A lazy way to add padding-top on elements without creating a class for it or doing in-line style editing
+*/
+
+/* Downwards */
+.pushdown-75px {
+    padding-top: 75px;
+}
+.pushdown-50px {
+    padding-top: 50px;
+}
+.pushdown-50p {
+    padding-top: 50%;
+}
+.pushdown-40px {
+    padding-top: 40px;
+}
+.pushdown-40p {
+    padding-top: 40%;
+}
+.pushdown-30p {
+    padding-top: 30%;
+}
+.pushdown-20p {
+    padding-top: 20%;
+}
+.pushdown-20px {
+    padding-top: 20px;
+}
+.pushdown-10p {
+    padding-top: 10%;
+}
+.pushdown-15p {
+    padding-top: 15%;
+}
+.pushdown-5p {
+    padding-top: 5%;
+}
+.pushdown-2p {
+    padding-top: 2%;
+}
+.pushdown-1p {
+    padding-top: 1%;
+}
+
+/* Leftwards */
+.pushleft-40p {
+    padding-right: 40px !important;
+}
+.pushleft-20p {
+    padding-right: 20% !important;
+}
+.pushleft-10p {
+    padding-right: 10% !important;
+}
+.pushleft-15p {
+    padding-right: 15% !important;
+}
+.pushleft-5p {
+    padding-right: 5% !important;
+}
+.pushleft-2p {
+    padding-right: 2% !important; 
+}
+.pushleft-1p {
+    padding-right: 1% !important;
+}
+
+/* 
+    Enclosing padding - pads the 4 directions
+*/
+
+.padding-14p {
+    padding: 14% 14% 14% 14%;
+}
+.padding-16p {
+    padding: 16% 16% 16% 16%;
+}
+.padding-20p {
+    padding: 20% 20% 20% 20%;
+}
+
+/*
+    Colors and Borders
+*/
+
+.green-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: #00E676;
+    box-shadow: 0 0 0 0;
+    /* Size & Position */    
+}
+
+.white-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: white;
+    box-shadow: 0 0 0 0;
+    /* Size & Position */      
+}
+
+.amber-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: #efb300;
+    box-shadow: 0 0 0 0;
+    /* Size & Position */    
+}
+
+.red-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 0;
+    /* Size & Position */    
+}
+
+.grey-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: #d8d8d8;
+    box-shadow: 0 0 0 0;
+    /* Size & Position */    
+}
+
+.white-border.dashed {
+    border: 1px dashed;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+/*
+    Extras
+*/
+
+.full-width {
+    width: 100%;
+}
+
+.no-shadow {
+    box-shadow: 0 0 0 0;
+}
