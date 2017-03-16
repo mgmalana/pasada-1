@@ -1,0 +1,336 @@
+<!-- 
+    Developed and designed by: Laurenz T.
+    email me @: laurenz@outlook.ph
+    COLLEGE OF COMPUTER STUDIES
+    COMPUTER SCIENCE - SOFTWARE TECHNOLOGY
+    "Ang pusong nabiyak, madalas naninindak" #uselessQuotesNgBagongTaon #2016
+-->
+<html>
+    <head>
+        <title>Crossfit Madayaw</title>
+        <!-- Animated type stuff -->
+        <link rel="stylesheet" href="../animated-headline/css/reset.css"> <!-- CSS reset -->
+	    <link rel="stylesheet" href="../animated-headline/css/style.css"> <!-- Resource style -->
+        <!-- Google icons -->        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>        
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Fonts up up and away -->
+        <link type="text/css" rel="stylesheet" href="../css/fontpack.css"/>
+        <!-- Materialize CSS Import -->
+        <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>	      
+        <!-- Custom Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="../css/styles.css"/>  
+        <!-- -->
+        <link type="text/css" rel="stylesheet" href="../css/animation.css" media="screen,projection"/>
+        
+        <!-- 
+            PLEASE UPDATE THE FAVICON FFS
+        -->
+        <link rel="icon" type="image/png" href="../assets/img/hack2015-favicon.png">
+        <!-- 
+            Looks like you've skipped editing the FAVICON....
+        -->
+        <!-- jquery. It's here because it wants to be here. It doesn't have to listen to what you want. -->
+        <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>                                      
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>    
+        <style>
+            html {
+                color: black;
+            }
+            p {
+                font-size: 1em;
+            }
+            /* if you want to change the loading-bar's bar */
+            .cd-headline.loading-bar .cd-words-wrapper::after {
+                background: #000;
+            }
+            label {
+                color: black !important;
+                padding-right: 100px;
+                margin-right: 200000px;
+            }
+            ul {
+                font-size: inherit !important;
+            }
+            li {
+                font-size: inherit !important;
+                color: #ffc107 !important;
+            }
+            .select-dropdown {
+                font-size: 42px !important;
+/*                text-transform: uppercase !important;*/
+                font-family: 'Poppins', sans-serif !important;
+                font-weight: 700 !important;
+            }
+            span {
+                color: inherit !important;
+            }
+        </style>
+    </head>
+    <!-- 
+        Start of Body 
+    -->
+    <body class="amber">
+        <!-- 
+            
+        -->
+        <!-- 
+            NAVBAR 
+        -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper " 
+                     style="background: rgba(255, 193, 7, 0.92);
+                            border-bottom: 1px solid;
+                            border-bottom-color: #ffb300;">
+                    
+                    <div
+                         style="padding-left: 45px;">
+                        <a href="#!" class="brand-logo popp-bold font-condensed black-text" style="font-size: 1.5em;">
+                            Citihub
+                        </a>
+                    </div>
+                    <ul class="right hide-on-med-and-down popp-bold font-condensed all-caps italics">
+                        <li>
+                            <a href="sass.html">
+                                 <!---->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="badges.html">
+                                 <!---->
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="collapsible.html" class="amber darken-1">
+                                Log in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <section id="location" class="amber" style="height: 92%;">
+            <!--  --><div class="pushdown-10p"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s10">
+                        <h1 class="black-text">
+                            <div class="white-text" data-sr="reset enter bottom please, and hustle 20px wait 0.5s">
+                                Mabuhay!
+                            </div>
+                            <div class="black-text" data-sr="reset enter bottom please, and hustle 20px wait 0.7s">
+                                Select a Citihub <br> location below:
+                            </div>                            
+                        </h1>                        
+                        <div class="row">
+                            <div class="input-field col s11" data-sr="reset enter bottom please, and hustle 20px wait 1.0s">
+                                <select class="black-text font-32" style="font-size: 2em;">
+                                    <option class="black" value="" disabled selected>Choose your option</option>
+                                    <option class="black" value="1" style="background: #000">Mandaluyong</option>
+                                    <option value="2">Makati</option>
+                                    <option value="3">Laguna</option>
+                                    <option value="3">Parañaque</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12" data-sr="reset enter bottom please, and hustle 20px wait 1.3s">
+                                <a href="#months" class="btn-large black amber-text col s2 z-depth-0" onclick="$.scrollLock( false )">
+                                    Next
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="months" class="amber" style="height: 120%;" onfocus="$.scrollLock( true )">
+            <!--  --><div class="pushdown-10p"></div>
+            <div class="container ">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m4">
+                        <h1 class="black-text">
+                            <div class="white-text" data-sr="reset enter left please, and hustle 20px wait 0.5s">
+                                Select <br> Months <br> to Rent
+                            </div>                          
+                        </h1>                        
+                    </div>
+                    <div class="col s12 m6">
+                        <form action="#" class="col s12" data-sr="reset enter right please, and hustle 20px wait 0.8s">
+                            <p>
+                                <input type="checkbox" id="January" />
+                                <label for="January">January</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="February" />
+                                <label for="February">February</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="March" />
+                                <label for="March">March</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="April" />
+                                <label for="April">April</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="May" />
+                                <label for="May">May</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="June" />
+                                <label for="June">June</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="July" />
+                                <label for="July">July</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="August" />
+                                <label for="August">August</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="September" />
+                                <label for="September">September</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="October" />
+                                <label for="October">October</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="November" />
+                                <label for="November">November</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="December" />
+                                <label for="December">December</label>
+                            </p>
+                      </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12" data-sr="reset enter bottom please, and hustle 20px wait 1.2s">
+                        <div class="row">
+                            <div class="col s2">
+                                <a href="#location" class="btn-large black amber-text col s2 z-depth-0" style="width: 100%;">
+                                    prev
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a href="#info" class="btn-large black amber-text col s2 z-depth-0" style="width: 100%;">
+                                    Next
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="info" style="height: 98%;">
+            <div class="pushdown-10p"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6" data-sr="reset enter left please, and hustle 20px wait 0.5s">
+                        <h1>
+                            Input your complete personal information here.
+                        </h1>
+                    </div>
+                    <div class="col s12 m6" data-sr="reset enter right please, and hustle 20px wait 1.0s">
+                        <div class="input-field col s12">
+                            <input id="first_name" type="text" class="validate black-text">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="last_name" type="text" class="validate black-text">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate black-text">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="contact" type="text" class="validate black-text">
+                            <label for="contact">Contact Number</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="position" type="text" class="validate black-text">
+                            <label for="position">Position</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="company" type="text" class="validate black-text">
+                            <label for="company">Company</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12" data-sr="reset enter bottom please, and hustle 20px wait 1.2s">
+                        <div class="row">
+                            <div class="col s2">
+                                <a href="#months" class="btn-large black amber-text col s2 z-depth-0" style="width: 100%;">
+                                    prev
+                                </a>
+                            </div>
+                            <div class="col s2">
+                                <a href="#info" class="btn-large black amber-text col s2 z-depth-0" style="width: 100%;">
+                                    Next
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="" style="height: 98%;">
+            <div class="pushdown-10p"></div>
+            <div class="container">
+                <h1>ZZZZZZZZ</h1>
+            </div>
+        </section>
+        <!-- \NAVBAR -->                 
+        <!-- 
+            Script Start 
+        -->
+        <script type="text/javascript" src="../js/materialize.js"></script>
+        <script type="text/javascript" src="../js/scrollReveal.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('select').material_select();
+              });
+        </script>
+        
+        <script>
+            window.sr = new scrollReveal();
+        </script>
+        <script type="text/javascript" src="../js/laurenz.js"></script>
+        <script>
+            $.scrollLock( true );
+        </script>
+        <!-- Script for changing navbar color. I know it's primitive. -->
+        
+<!--        <script type="text/javascript" src="../animated-headline/js/main.js"></script>-->
+
+    </body>
+</html>
+
+<!--
+                    <div class="col s12 popp-bold">
+                        <h1 class="white-text popp-bold all-caps italics">
+                            Awarding those who go <br>
+                            beyond 
+                             <!-- Typed js content goes here 
+                            <span class="element red-text text-accent-3"></span>
+                        </h1>
+                    </div>
+                    -->
+
+
+
+
+
+
+
+
