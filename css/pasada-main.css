@@ -1,8 +1,13 @@
 /* 
     Native Element styling 
 */
-
-body{}
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-size: 1.2em;
+}
 
 /*
     Pushdown - A lazy way to add padding-top on elements without creating a class for it or doing in-line style editing
@@ -75,7 +80,12 @@ body{}
 /* 
     Enclosing padding - pads the 4 directions
 */
-
+.padding-5p {
+    padding: 5% 5% 5% 5%;
+}
+.padding-7p {
+    padding: 0% 7% 0% 7%;
+}
 .padding-14p {
     padding: 14% 14% 14% 14%;
 }
@@ -89,6 +99,18 @@ body{}
 /*
     Colors and Borders
 */
+
+.amber-trans {
+  background-color: rgba(255, 179, 0, 0.9) !important;
+}
+
+.black-border {
+    /* Border */
+    border: 1px solid;
+    /* Colors */    
+    border-color: #000000;
+    box-shadow: 0 0 0 0;
+}
 
 .green-border {
     /* Border */
@@ -116,7 +138,11 @@ body{}
     box-shadow: 0 0 0 0;
     /* Size & Position */    
 }
-
+.amber-border.border-right {
+    border-right: 1px solid;
+    /* Colors */    
+    border-color: #efb300;
+}
 .red-border {
     /* Border */
     border: 1px solid;
@@ -143,6 +169,13 @@ body{}
     border-radius: 5px;
 }
 
+/* 
+    Override Materialize CSS styles here 
+*/
+table.highlight > tbody > tr:hover {
+  background-color: #f7e897;
+}
+
 /*
     Extras
 */
@@ -153,4 +186,8 @@ body{}
 
 .no-shadow {
     box-shadow: 0 0 0 0;
+}
+
+.no-margin {
+    margin: 0 0 0 0 !important;
 }

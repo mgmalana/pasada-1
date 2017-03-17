@@ -11,20 +11,20 @@
         <!-- 
             Import stylesheets Below
         -->
-        <!-- Fonts up up and away -->
-        <link type="text/css" rel="stylesheet" href="css/fontpack-local.css"/>
         <!-- Materialize CSS Import -->
         <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- Fonts up up and away -->
+        <link type="text/css" rel="stylesheet" href="css/fontpack-local.css"/>
+        <!-- Google Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Custom Stylesheet -->
         <link type="text/css" rel="stylesheet" href="css/pasada-main.css"/>
         <!-- 
-            JQUERY IS HERE kasi ayaw ko sa ilalim 
-        -->
-        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
-        <!-- 
             Something Meta 
-        -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>    
+        --> 
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+        <style> [data-sr] { visibility: hidden; } </style>
     </head>
     
     <body>
@@ -35,19 +35,24 @@
             NAVIGATION 
         -->
         <div class="navbar-fixed">
-            <nav class="amber amber-border">
+            <nav class="amber-trans amber-border">
                 <div class="nav-wrapper">
                     <!-- destination links -->
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li class="amber darken-2">
-                            <a href="#" class="sf-700 italics all-caps">
+                        <li>
+                            <a href="operator/" class="sf-700 italics all-caps">
                                 Log in
+                            </a>
+                        </li>
+                        <li class="amber- border-right">
+                            <a href="#" class="sf-700 italics all-caps">
+                                Magrereklamo ako
                             </a>
                         </li>
                     </ul>
                     <!-- /destination links -->
                     <!-- logo/title in navbar -->
-                    <a href="#" class="brand-logo right sf-700 pushleft-1p">
+                    <a href="#" class="brand-logo right sf-700 pushleft-1p italics">
                         pasada
                     </a>
                     <!-- /logo/title in navbar -->
@@ -61,31 +66,88 @@
             CONTENT BODY
         -->
         <!-- ABOVE-THE-FOLD -->
-        <section id="above-the-fold" class="section amber windowheight">
+        <section id="above-the-fold" class="section amber darken-1 ">
             <div class="super">
                 <!-- container -->
                 <div class="container">
                     <!-- row -->
                     <div class="row">
+                        <!-- COMPLAINTS -->
+                        <div class="col s12">
+                        
+                        </div>
+                        <!-- /COMPLAINTS -->
+                    </div>
+                    <!-- /row -->
+                    <!-- row -->
+                    <div class="row">
                         <!-- left col -->
-                        <div class="col s12 m6 valign-wrapper" style="height: 70%;">
-                            <h1 class="roboto-bold valign">
-                                Meet your Passenger Safety Dashboard
-                            </h1>
+                        <div class="col s12 m6 valign-wrapper " style="height: 70%;">
+                            <div class="row valign" data-sr="reset enter left move 40px">
+                                <h1 class="roboto-bold font-condensed" >
+                                    Take your bus operation to the next level.
+                                </h1>
+                                <p class="white-text">
+                                    Powerful analytics tool to help you understand how your bus drivers perform, protect your business from future disasters caused by undisciplined drivers, identify drivers that need emergency help.
+                                </p>
+                            </div>
                         </div>
                         <!-- /left col -->
+                        <!-- invisible column -->
+                        <div class="col s12 m1 hide-on-small-only"> </div>
+                        <!-- /invisible column -->
                         <!-- right col -->
-                        <div class="col s12 m6 valign-wrapper" style="height: 70%;">
-                            <div class="container">
-                                <div class="card amber">
-                                    <div class="card-content center">
-                                        <h4> username </h4>
-                                        <h4> password </h4>
-                                        <a class="btn">
-                                            Log In
-                                        </a>
+                        <div class="col s12 m5 valign-wrapper hide-on-small-only" style="height: 70%;">
+                            <div class="full-width">
+                                <!-- Sign in Card -->
+                                <div class="card white">
+                                    <!-- card content -->
+                                    <div class="card-content ">
+                                        <!-- Card Title -->
+                                        <div class="row">
+                                            <h5 class="center">
+                                                Sign in using your Pasada account
+                                            </h5>
+                                        </div>
+                                        <!-- /Card Title -->
+                                        <div class="">
+                                            <!-- Username -->
+                                            <div class="row valign-wrapper">
+                                                <div class="col s1">
+                                                    <i class="material-icons small">perm_identity</i>
+                                                </div>
+                                                <div class="col s11 input-field">
+                                                    <input id="username" type="text" class="validate">
+                                                    <label for="username">
+                                                        Username
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- /Username -->
+                                            <!-- Password -->
+                                            <div class="row valign-wrapper">
+                                                <div class="col s1">
+                                                    <i class="material-icons small">https</i>
+                                                </div>
+                                                <div class="col s11 input-field">
+                                                    <input id="password" type="text" class="validate">
+                                                    <label for="password">
+                                                        Password
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- /Password -->
+                                        </div>
+                                        <!-- BUTTON -->
+                                        <div class="row center">
+                                            <a href="operator/" class="btn-large amber">
+                                                Log In
+                                            </a>
+                                        </div>
+                                        <!-- /BUTTON -->
                                     </div>
-                                </div>    
+                                </div>
+                                <!-- /Sign in Card -->
                             </div>
                         </div>
                         <!-- /right col -->
@@ -94,15 +156,116 @@
                 </div>
                 <!-- /container -->
             </div>
+            <!-- SCROLL DOWN FOR MORE -->
+            <div class="container">
+                <!-- ROW -->
+                <div class="row">
+                    <h5 class="all-caps italics roboto-ultrathin center amber-text text-darken-3">
+                        scroll down for more
+                    </h5>
+                </div>
+                <!-- ROW -->
+            </div>
+            <!-- SCROLL DOWN FOR MORE -->
         </section>
         <!-- /ABOVE-THE-FOLD -->
+        <!-- SECTION 1 -->
+        <section class="section pushdown-5p" style="height: 90%;">
+            <div class="container">
+                <!-- ROW -->
+                <div class="row">
+                    <!-- LEFT-COL -->
+                    <div class="col s12 m6 valign-wrapper" style="height: 100%">
+                        <div class="row valign">
+                            <h1 class="roboto-bold amber-text text-darken-2" data-sr="reset enter left move 40px">
+                                Monitor your buses in real-time, for-reals.
+                            </h1>
+                            <p data-sr="reset enter bottom move 60px">
+                                Know where your buses are through 30-minute intervals and know if there are emergencies or infractions commited. Get informed with any problems encountered such as breakdowns or life-threatening emergencies.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /LEFT-COL -->
+                    <!-- RIGHT-COL -->
+                    <div class="col s12 m6 valign-wrapper" style="height: 100%" data-sr="reset enter right move 40px">
+                        <img src="assets/images/macbook-pro.png" class="full-width" >
+                    </div>
+                    <!-- /RIGHT-COL -->
+                </div>
+                <!-- /ROW -->
+            </div>
+        </section>
+        <!-- /SECTION 1 -->
+        <!-- SECTION 2 -->
+        <section class="section pushdown-5p grey darken-4 " style="height: 90%;">
+            <div class="container">
+                <!-- ROW -->
+                <div class="row">
+                    <!-- LEFT-COL -->
+                    <div class="col s12 m6 valign-wrapper" style="height: 100%">
+                        <div class="row valign">
+                            <h1 class="roboto-bold amber-text text-darken-2" data-sr="reset enter left move 40px">
+                                Monitor your buses in real-time, for-reals.
+                            </h1>
+                            <p data-sr="reset enter bottom move 60px">
+                                Know where your buses are through 30-minute intervals and know if there are emergencies or infractions commited. Get informed with any problems encountered such as breakdowns or life-threatening emergencies.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /LEFT-COL -->
+                    <!-- RIGHT-COL -->
+                    <div class="col s12 m6 valign-wrapper" style="height: 100%" data-sr="reset enter right move 40px">
+                        <img src="assets/images/macbook-pro.png" class="full-width" >
+                    </div>
+                    <!-- /RIGHT-COL -->
+                </div>
+                <!-- /ROW -->
+            </div>
+        </section>
+        <!-- /SECTION 2-->
+        <!-- FOOTER SECTION -->
+        <footer class="page-footer amber darken-2 no-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">
+                            Links
+                        </h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+            </div>
+        </footer>
+        <!-- /FOOTER SECTION -->
         <!--
             /CONTENT BODY
         -->
         <!-- 
             ******** SCRIPTS BELOW ********
         -->
+        <!-- Import JavaScript files -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/laurenz.js"></script>
+        <script type="text/javascript" src="js/scrollReveal.js"></script>
+        <!-- Instantiate scrollReveal -->
+        <script>
+          window.sr = new scrollReveal();
+        </script>
     </body>
 </html>
