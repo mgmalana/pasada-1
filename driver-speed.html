@@ -61,9 +61,43 @@
 
         var options = {
           title: 'Driver\'s Speed and Speed Limit',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
+            titlePosition: 'none',
+            curveType: 'function',
+            legend: { position: 'bottom' },
+            hAxis: {
+                gridlines: {
+                    count: -1,
+                    color: '#000'
+                }
+            },
+            vAxis: {
+                minValue: 10,
+                viewWindow: {
+                    min: 0,
+                    max: 80
+                },
+                gridlines: {
+                    count: 6,
+                    color: "#000"
+                }
+            },
+            chartArea: { 
+                width: '87%',
+                stroke: '#fff'
+            },
+            series: {
+              0: {
+                  color: "#fff",
+                  lineWidth: 5,
+                  minValue: 0
+              },
+              1: {
+                  color: "red",
+                  lineWidth: 5,
+                  minValue: 0
+              }  
+            },
+            backgroundColor: '#ffc107'        };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
