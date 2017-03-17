@@ -88,7 +88,7 @@ window.scrollReveal = (function( window ) {
        *        vFactor changes when an element is considered in the viewport;
        *        the default requires 60% of an element be visible.
        */
-      vFactor:  1.0,
+      vFactor:  0.4,
 
       complete: function( el ) {} // Note: reset animations do not complete.
     },
