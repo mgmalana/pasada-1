@@ -1,19 +1,94 @@
 <html>
-<head>
-  <title>Buses</title>
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-  <link type="css" rel="stylesheet" href="css/MarkerCluster.css">
-  <link type="css" rel="stylesheet" href="css/MarkerCluster.Default.css">
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
-  <style>
-    #map{ height: 100% }
-  </style>
-</head>
-<body>
+    <head>
+      <title>Buses</title>
+        <!-- 
+            Import stylesheets Below
+        -->
+        <!-- Fonts up up and away -->
+        <link type="text/css" rel="stylesheet" href="css/fontpack-local.css"/>
+        <!-- Materialize CSS Import -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- Custom Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/pasada-main.css"/>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+        <link type="css" rel="stylesheet" href="css/MarkerCluster.css">
+        <link type="css" rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <!-- 
+            JQUERY IS HERE kasi ayaw ko sa ilalim 
+        -->
 
-  <div id="map"></div>
-
-</body>
-  <script src="js/bus-map.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+        <style>
+        #map{ height: 100% }
+        </style>
+    </head>
+    <body>
+        <!--
+            ******** START HERE ********
+        -->
+        <!-- 
+            NAVIGATION 
+        -->
+        <div class="navbar-fixed">
+            <nav class="amber-trans amber-border">
+                <div class="nav-wrapper">
+                    <!-- destination links -->
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="operator/" class="sf-700 all-caps">
+                                Log out
+                            </a>
+                        </li>
+                        <li class="amber- border-right">
+                            <a href="#" class="sf-700 all-caps">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /destination links -->
+                    <!-- logo/title in navbar -->
+                    <a href="#" class="brand-logo right black-text roboto-700 pushleft-1p ">
+                        pasada
+                    </a>
+                    <!-- /logo/title in navbar -->
+                </div>
+            </nav>
+        </div>
+        <!-- 
+            /NAVIGATION 
+        -->
+        <!--
+            CONTENT BODY
+        -->
+        <section>
+            <div class="row no-padding">
+                <div class="col s12 m3 grey darken-4 no-padding full-height">
+                    <div class="row padding-5p">
+                        <div class="card center">
+                            <div class="card-content">
+                                <p>ABS-GMA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m9 no-padding ">
+                    <div id="map"></div>        
+                </div>
+            </div>
+        </section>
+        
+        <!--
+                /CONTENT BODY
+        -->
+        <!-- 
+            ******** SCRIPTS BELOW ********
+        -->
+        <!-- Import JavaScript files -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/laurenz.js"></script>
+        <script src="js/bus-map.js"></script>
+    </body>
+  
 </html>
