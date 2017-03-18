@@ -1,0 +1,169 @@
+<html>
+    <head>
+      <title>Govt Dashboard</title>
+        <!-- 
+            Import stylesheets Below
+        -->
+        <!-- Fonts up up and away -->
+        <link type="text/css" rel="stylesheet" href="css/fontpack-local.css"/>
+        <!-- Materialize CSS Import -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- Custom Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/pasada-main.css"/>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+        <link type="css" rel="stylesheet" href="css/MarkerCluster.css">
+        <link type="css" rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" type="text/css" href="css/calendar-heatmap.css">
+        <!-- 
+            JQUERY IS HERE kasi ayaw ko sa ilalim 
+        -->
+
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="js/d4.min.js"></script>
+        <style type="text/css">
+            #map{ height: 134% }
+            
+            svg {
+              font: 10px sans-serif;
+            }
+            
+            .axis path,.axis line {
+                fill: none;
+                stroke: #b6b6b6;
+                shape-rendering: crispEdges;
+            }
+            
+            .tick text{
+                fill: #999;
+            }
+            
+            g.journal.active{
+                cursor:pointer;
+            }
+            
+            text.label{
+                font-size:12px;font-weight:bold;cursor:pointer;
+            }
+            
+            text.value{
+                font-size:12px;font-weight:bold;
+            }
+            
+            circle{
+                fill:#ffc107;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            ******** START HERE ********
+        -->
+        <!-- 
+            NAVIGATION 
+        -->
+        <div class="navbar-fixed">
+            <nav class="amber-trans amber-border">
+                <div class="nav-wrapper">
+                    <!-- destination links -->
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="operator/" class="sf-700 all-caps">
+                                Log out
+                            </a>
+                        </li>
+                        <li class="amber border-right">
+                            <a href="#" class="sf-700 all-caps">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /destination links -->
+                    <!-- logo/title in navbar -->
+                    <a href="#" class="brand-logo right black-text roboto-700 pushleft-1p ">
+                        pasada
+                    </a>
+                    <!-- /logo/title in navbar -->
+                </div>
+            </nav>
+        </div>
+        <!-- 
+            /NAVIGATION 
+        -->
+        <!--
+            CONTENT BODY
+        -->
+        <section class="grey darken-4">
+            <!-- ROW -->
+            <div class="row no-padding">
+                <!-- MAP COL -->
+                <div class="col s12 m5 no-padding">
+                    <div id="map"></div>        
+                </div>
+                <!-- /MAP COL -->
+                <div class="col s12 m7 grey darken-4">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h5>
+                                        Traffic Data
+                                    </h5>
+                                    <div id="punchcard"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h5> 
+                                        Speed of buses 
+                                    </h5>
+                                    <div class="container1 full-width"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h5>
+                                        Bunching Data
+                                    </h5>
+                                    <div class="container2"></div>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- /ROW -->
+            <div class="row">
+                <div class="col s12">
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!--
+                /CONTENT BODY
+        -->
+        <!-- 
+            ******** SCRIPTS BELOW ********
+        -->
+        <!-- Import JavaScript files -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/laurenz.js"></script>
+        <script type="text/javascript" src="js/bus-map.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="js/calendar-heatmap.js"></script>
+        <script type="text/javascript" src="js/auth-dash.js"></script>
+    </body>
+  
+</html>

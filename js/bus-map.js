@@ -24,7 +24,7 @@ var latlons = [[14.7162,121.003],[14.6329,121.045],[14.6247,121.049],[14.3813,12
                 [14.3703,121.05], [14.3574,121.06], [14.5964,121.06], [14.3483,121.065],
                 [14.4804,121.045]];
 
-for(let latlon of latlons){
+for(let latlon of latlons) {
     markers.addLayer(L.marker(latlon, {icon: busIcon}));
 }
 
